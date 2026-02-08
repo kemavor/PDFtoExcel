@@ -54,7 +54,7 @@ def convert_pdf_to_excel(pdf_path, excel_path=None, pages='all'):
         return excel_path
         
     except Exception as e:
-        raise Exception(f"Error converting PDF to Excel: {str(e)}")
+        raise Exception(f"Error converting PDF to Excel: {str(e)}") from e
 
 
 def main():
